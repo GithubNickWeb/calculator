@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../bg.jpg) no-repeat center center;
+  background-size: cover;
+  font-size: 17px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  width: 350px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+}
+
+.calculator__data {
+  width: 90%;
+  margin: 10px 15px;
+  background-color: hsla(0, 0%, 100%, 0.47);
+  font-weight: 800;
+  font-size: 25px;
+  padding: 15px 10px;
+  text-align: right;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.buttons {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  line-height: 70px;
+  font-weight: 800;
+  border: none;
+  /* box-shadow: 0px 2px 1px #ccc; */
+  cursor: pointer;
+  outline: none;
+}
+
+.button--operation:nth-of-type(7) {
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+.button:hover {
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.button--del {
+  padding-top: 10px;
+}
+
+.button--clear {
+  background-color: rgb(72, 177, 114);
+}
+
+.button--operation {
+  background-color: #286bc7;
+}
