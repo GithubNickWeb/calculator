@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="shortcut icon" href="favicon.png" image/x-icon">
+  <title>Mi Calculadora</title>
+</head>
+
+<body>
+  <div class="calculator">
+    <input type="text" class="calculator__data" id="data" readonly>
+
+    <div class="buttons" id="buttons">
+      <button type="text" class="button button--clear">AC</button>
+      <input type="text" class="button button--operation id=" btn-pare-1" value="(" readonly>
+      <input type="text" class="button button--operation id=" btn-pare-2" value=")" readonly>
+      <input type="text" class="button button--operation" id="btn-div" value="/" readonly>
+
+      <input type="text" class="button button--number" value="7" readonly>
+      <input type="text" class="button button--number" value="8" readonly>
+      <input type="text" class="button button--number" value="9" readonly>
+      <input type="text" class="button button--operation" value="*" readonly>
+
+      <input type="text" class="button button--number" id="n4" value="4" readonly>
+      <input type="text" class="button button--number" id="n5" value="5" readonly>
+      <input type="text" class="button button--number" id="n6" value="6" readonly>
+      <input type="text" class="button button--operation" id="btn-rest" value="-" readonly>
+
+      <input type="text" class="button button--number" id="n1" value="1" readonly>
+      <input type="text" class="button button--number" id="n2" value="2" readonly>
+      <input type="text" class="button button--number" id="n3" value="3" readonly>
+      <input type="text" class="button button--operation" id="n1" value="+" readonly>
+
+      <input type="text" class="button button--number" id="n0" value="0" readonly>
+      <input type="text" class="button button--number" id="point" value="." readonly>
+      <button type="text" class="button " id="del"><img class="button--del" src="arrow_back.svg" alt=""></button>
+      <button type="text" class="button button--operation button--equaly" id="equaly">=</button>
+    </div>
+    </input>
+
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
